@@ -1,0 +1,54 @@
+@import '_colors';
+@import '_shadows';
+@import '_responsive';
+
+* { box-sizing: border-box; }
+
+html {
+	background: @color-brand-gold;
+	padding: 10px;
+	font-size: 20px;
+}
+
+body {
+	background: @color-background-light-bg;
+	color: @color-active-light-bg;
+	.alt-bg {
+		background: @color-alt-background-light-bg;
+	}
+	font-family: "DinPro", Helvetica, Arial, sans-serif;
+	font-size: .8rem;
+	font-weight: 400;
+	line-height: 1rem;
+}
+
+.text-underline {
+	border-bottom-width: .1rem;
+	border-bottom-style: solid;
+}
+
+.dark-bg {
+	background: @color-background-dark-bg;
+	color: @color-active-dark-bg;
+	.alt-bg {
+		background: @color-alt-background-dark-bg;
+	}
+	& > .text-underline {
+		border-color: @color-active-dark-bg;
+	}
+}
+
+.light-bg {
+	background: @color-background-light-bg;
+	color: @color-active-light-bg;
+	.alt-bg {
+		background: @color-alt-background-light-bg;
+	}
+	& > .text-underline {
+		border-color: @color-active-light-bg;
+	}
+}
+
+a {
+	color: @color-brand-gold;
+}

@@ -1,0 +1,21 @@
+@import '_colors';
+@import '_shadows';
+@import '_responsive';
+
+header {
+	box-shadow: @shadow-neat;
+	box-shadow-blend-mode: multiply;
+	padding: .5rem;
+	// XS+
+	@media screen and (max-width: @bkpt-xs-sm) {
+		margin-bottom: @double-margin;
+	}
+	// SM+
+	@media screen and (min-width: @bkpt-xs-sm) {
+		margin-bottom: @triple-margin;
+	}
+	// MD+
+	@media screen and (min-width: @bkpt-sm-md) {
+		margin-bottom: @quad-margin;
+	}
+}

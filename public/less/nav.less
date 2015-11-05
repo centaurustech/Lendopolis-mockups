@@ -1,0 +1,65 @@
+@import '_colors';
+@import '_shadows';
+@import '_responsive';
+
+nav {
+	font-family: "FuturaStd", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: .65rem;
+	line-height: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .0rem;
+}
+
+.dark-bg nav { font-weight: 500; }
+.light-bg nav { font-weight: 600; }
+
+nav {
+	.active, .inactive {
+		display: inline-block;
+		padding-left: @half-margin;
+		padding-right: @half-margin;
+		vertical-align: middle;	
+	}
+	.active {
+		border-bottom: .1rem solid @color-brand-gold;
+	}
+}
+
+nav.subnav {
+	// XS
+	@media screen and (max-width: @bkpt-xs-sm) {
+		margin-bottom: @single-margin;
+	}
+	// SM
+	@media screen and (min-width: @bkpt-xs-sm) {
+		margin-bottom: @double-margin;
+	}
+	// MD
+	@media screen and (min-width: @bkpt-sm-md) {
+		margin-bottom: @triple-margin;
+	}
+	.inactive, .separator {
+		color: @color-inactive-light-bg;
+	}
+	.separator {
+		display: inline-block;
+	}
+}
+
+.dark-bg nav.subnav {
+	.inactive, .separator {
+		color: @color-inactive-dark-bg;
+	}
+}
+
+.light-bg nav.subnav {
+	.inactive, .separator {
+		color: @color-inactive-light-bg;
+	}
+}
+
+nav a {
+	text-decoration: none;
+	color: inherit;
+}

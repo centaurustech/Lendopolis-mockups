@@ -1,0 +1,20 @@
+header {
+  box-shadow: 0rem 0.15rem 0rem rgba(13, 30, 40, 0.15);
+  box-shadow-blend-mode: multiply;
+  padding: .5rem;
+}
+@media screen and (max-width: 501px) {
+  header {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  header {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  header {
+    margin-bottom: 4rem;
+  }
+}

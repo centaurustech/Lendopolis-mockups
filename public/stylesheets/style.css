@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background: #C88B1E;
+  padding: 10px;
+  font-size: 20px;
+}
+body {
+  background: #FFFFFF;
+  color: #0D1E28;
+  font-family: "DinPro", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+body .alt-bg {
+  background: #F4F4F5;
+}
+.text-underline {
+  border-bottom-width: .1rem;
+  border-bottom-style: solid;
+}
+.dark-bg {
+  background: #03333B;
+  color: #FCFCFC;
+}
+.dark-bg .alt-bg {
+  background: #0F3C44;
+}
+.dark-bg > .text-underline {
+  border-color: #FCFCFC;
+}
+.light-bg {
+  background: #FFFFFF;
+  color: #0D1E28;
+}
+.light-bg .alt-bg {
+  background: #F4F4F5;
+}
+.light-bg > .text-underline {
+  border-color: #0D1E28;
+}
+a {
+  color: #C88B1E;
+}
