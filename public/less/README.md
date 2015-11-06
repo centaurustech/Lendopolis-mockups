@@ -1,2 +1,5 @@
 Useful css classes
 ==
+
+.box
+--
