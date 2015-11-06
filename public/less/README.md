@@ -9,7 +9,7 @@ Creates a round cornered box (4px), with 2px border, 10px padding and neat drop 
 
 This class creates a container element for fixed side elements, that stays fixed only after a certain level of scroll
 
-### Structure : 
+** Structure : **
 - .slide
 	- .topBracket
 	- .slider
