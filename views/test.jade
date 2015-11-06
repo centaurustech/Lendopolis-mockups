@@ -12,23 +12,43 @@ html
 		block content
 				.container
 					.row
-						.column.col-1-1
+						.column.col-12-12
 							h1
 								span= title
 
 				.container
 					.row
-						.column.col-xs-1-1.col-md-1-3.col-lg-2-3
-							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus consectetur turpis sit amet vulputate. Morbi eget felis euismod, lobortis enim eu, rutrum justo. Nulla eu tortor felis. Nullam facilisis eget nisl non vestibulum. Sed fringilla mauris ac auctor aliquam. Cras non erat eu ante blandit tristique. Morbi sit amet enim fringilla, scelerisque tortor at, commodo odio. Curabitur maximus, nulla vel iaculis volutpat, orci purus faucibus odio, sit amet viverra dui ex non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-						.column.col-xs-1-1.col-md-1-3.col-lg-2-3
-							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus consectetur turpis sit amet vulputate. Morbi eget felis euismod, lobortis enim eu, rutrum justo. Nulla eu tortor felis. Nullam facilisis eget nisl non vestibulum. Sed fringilla mauris ac auctor aliquam. Cras non erat eu ante blandit tristique. Morbi sit amet enim fringilla, scelerisque tortor at, commodo odio. Curabitur maximus, nulla vel iaculis volutpat, orci purus faucibus odio, sit amet viverra dui ex non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-						.column.col-xs-1-1.col-md-1-3.col-lg-2-3
+						.column.col-xs-12-12.col-md-4-12.col-lg-8-12
 							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus consectetur turpis sit amet vulputate. Morbi eget felis euismod, lobortis enim eu, rutrum justo. Nulla eu tortor felis. Nullam facilisis eget nisl non vestibulum. Sed fringilla mauris ac auctor aliquam. Cras non erat eu ante blandit tristique. Morbi sit amet enim fringilla, scelerisque tortor at, commodo odio. Curabitur maximus, nulla vel iaculis volutpat, orci purus faucibus odio, sit amet viverra dui ex non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
-				.container.dark
+						.column.col-xs-12-12.col-md-4-12.col-lg-8-12
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus consectetur turpis sit amet vulputate. Morbi eget felis euismod, lobortis enim eu, rutrum justo. Nulla eu tortor felis. Nullam facilisis eget nisl non vestibulum. Sed fringilla mauris ac auctor aliquam. Cras non erat eu ante blandit tristique. Morbi sit amet enim fringilla, scelerisque tortor at, commodo odio. Curabitur maximus, nulla vel iaculis volutpat, orci purus faucibus odio, sit amet viverra dui ex non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+						.column.col-xs-12-12.col-md-4-12.col-lg-8-12
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus consectetur turpis sit amet vulputate. Morbi eget felis euismod, lobortis enim eu, rutrum justo. Nulla eu tortor felis. Nullam facilisis eget nisl non vestibulum. Sed fringilla mauris ac auctor aliquam. Cras non erat eu ante blandit tristique. Morbi sit amet enim fringilla, scelerisque tortor at, commodo odio. Curabitur maximus, nulla vel iaculis volutpat, orci purus faucibus odio, sit amet viverra dui ex non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+				.container(style='height: 700px')
 					.row
-						.column.col-1-1
+						.column-col-3-12
+							.slide
+								.topBracket
+								.slider 
+									.box coucou
+									.box.fixed coucou
+
+				.container(style='height: 5000px')
+					.row
+						.column-col-3-12
+							.slide
+								.topBracket
+								.slider 
+									.box coucou
+									.box.fixed coucou
+
+				.container.dark-bg
+					.row
+						.column.col-12-12
 							span.lololo coucou
 
-		script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+		script(src='/javascripts/jquery-2.1.4.min.js')
 		script(src='/javascripts/global.js')

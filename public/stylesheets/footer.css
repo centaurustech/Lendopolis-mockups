@@ -35,31 +35,6 @@
   font-weight: 600;
   font-style: italic;
 }
-header {
-  box-shadow: 0rem 0.15rem 0rem rgba(13, 30, 40, 0.15);
-  padding: .5rem;
-  height: 3rem;
-}
-@media screen and (max-width: 501px) {
-  header {
-    margin-bottom: 2rem;
-  }
-}
-@media screen and (min-width: 501px) {
-  header {
-    margin-bottom: 3rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  header {
-    margin-bottom: 4rem;
-  }
-}
-header.fixed {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0.5rem;
-  right: 0.5rem;
-  background: #fff;
+footer {
+  height: 25rem;
 }

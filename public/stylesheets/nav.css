@@ -1,10 +1,46 @@
+@font-face {
+  font-family: 'DinPro';
+  src: url('../fonts/DinPro/DINPro-Regular.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DinPro';
+  src: url('../fonts/DinPro/DINPro-Medium.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'DinPro';
+  src: url('../fonts/DinPro/DINPro-Bold.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'FuturaStd';
+  src: url('../fonts/FuturaStd/FuturaStd-Book.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'FuturaStd';
+  src: url('../fonts/Futura/Futura.ttc');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Archer';
+  src: url('../fonts/Archer/Archer-BookItal-Pro.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Archer';
+  src: url('../fonts/Archer/Archer-MediumItal-Pro.otf');
+  font-weight: 600;
+  font-style: italic;
+}
 nav {
   font-family: "FuturaStd", Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: .65rem;
   line-height: 1rem;
   text-transform: uppercase;
-  letter-spacing: .0rem;
 }
 .dark-bg nav {
   font-weight: 500;
@@ -20,11 +56,11 @@ nav .inactive {
   vertical-align: middle;
 }
 nav .active {
-  border-bottom: 0.1rem solid #C88B1E;
+  border-bottom: 0.1rem solid #C98C1F;
 }
 @media screen and (max-width: 501px) {
   nav.subnav {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 501px) {

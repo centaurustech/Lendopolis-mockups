@@ -1,6 +1,7 @@
 @import '_colors';
-@import '_shadows';
 @import '_responsive';
+@import '_fonts';
+@import '_styles';
 
 nav {
 	font-family: "FuturaStd", Helvetica, Arial, sans-serif;
@@ -8,7 +9,6 @@ nav {
 	font-size: .65rem;
 	line-height: 1rem;
 	text-transform: uppercase;
-	letter-spacing: .0rem;
 }
 
 .dark-bg nav { font-weight: 500; }
@@ -29,7 +29,7 @@ nav {
 nav.subnav {
 	// XS
 	@media screen and (max-width: @bkpt-xs-sm) {
-		margin-bottom: @single-margin;
+		margin-bottom: @double-margin;
 	}
 	// SM
 	@media screen and (min-width: @bkpt-xs-sm) {

@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET about/intColl page. */
-router.get('/about/intelligence-collective', function(req, res, next) {
-	res.render('about/intelligence-collective', { title: 'L\'intelligence collective' });
+router.get('/about/collective-intelligence', function(req, res, next) {
+	res.render('about/collective-intelligence', { title: 'L\'intelligence collective' });
 });
 
 /* GET test page. */

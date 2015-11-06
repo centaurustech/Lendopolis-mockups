@@ -1,11 +1,13 @@
 @import '_colors';
-@import '_shadows';
 @import '_responsive';
+@import '_fonts';
+@import '_styles';
 
 header {
 	box-shadow: @shadow-neat;
-	box-shadow-blend-mode: multiply;
+	// box-shadow-blend-mode: multiply;
 	padding: .5rem;
+	height: @triple-margin;
 	// XS+
 	@media screen and (max-width: @bkpt-xs-sm) {
 		margin-bottom: @double-margin;
@@ -18,4 +20,13 @@ header {
 	@media screen and (min-width: @bkpt-sm-md) {
 		margin-bottom: @quad-margin;
 	}
+}
+
+header.fixed {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: @half-margin;
+	right: @half-margin;
+	background: #fff;
 }
