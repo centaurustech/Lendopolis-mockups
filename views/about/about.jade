@@ -1,0 +1,68 @@
+extends ../layout
+
+block content
+
+	.container
+		.row
+			.column.col-12-12
+					h1
+						span.text-underline= title
+
+		nav.subnav
+			case title
+				when 'Manifeste'
+					a(href='/about/manifesto').active Manifeste
+				default
+					a(href='/about/manifesto').inactive Manifeste
+			.separator
+			case title
+				when 'L\'intelligence collective'
+					a(href='/about/collective-intelligence').active L'intelligence collective
+				default
+					a(href='/about/collective-intelligence').inactive L'intelligence collective
+			.separator
+			case title
+				when 'Statistiques'
+					a(href='/about/statistics').active Statistiques
+				default
+					a(href='/about/statistics').inactive Statistiques
+			.separator
+			case title
+				when 'L\'équipe'
+					a(href='/about/team').active L'équipe
+				default
+					a(href='/about/team').inactive L'équipe
+			.separator
+			case title
+				when  'Mentors'
+					a(href='/about/mentors').active Mentors
+				default
+					a(href='/about/mentors').inactive Mentors
+			.separator
+			case title
+				when 'Articles'
+					a(href='/about/press').active Articles
+				default
+					a(href='/about/press').inactive Articles
+			.separator
+			case title
+				when 'Press kit'
+					a(href='/about/presskit').active Press kit
+				default
+					a(href='/about/presskit').inactive Press kit
+			.separator
+			case title
+				when 'Prestataires'
+					a(href='/about/service-providers').active Prestataires
+				default
+					a(href='/about/service-providers').inactive Prestataires
+			.separator
+			case title
+				when 'Contact'
+					a(href='/about/contact').active Contact
+				default
+					a(href='/about/contact').inactive Contact
+
+		.clear
+
+		block content_2

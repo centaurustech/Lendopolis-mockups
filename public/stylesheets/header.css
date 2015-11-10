@@ -55,11 +55,16 @@ header {
     margin-bottom: 4rem;
   }
 }
+.dark-bg header {
+  background: #03333B;
+}
+.light-bg header {
+  background: #FFFFFF;
+}
 header.fixed {
   position: fixed;
   display: none;
   top: 0;
   left: 0.5rem;
   right: 0.5rem;
-  background: #fff;
 }

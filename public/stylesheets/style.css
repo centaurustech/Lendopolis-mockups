@@ -54,6 +54,15 @@ body {
 body .alt-bg {
   background: #F4F4F5;
 }
+.light-bg svg {
+  fill: #0D1E28;
+}
+.dark-bg svg {
+  fill: #FCFCFC;
+}
+.clear {
+  clear: both;
+}
 .dark-bg {
   background: #03333B;
   color: #FCFCFC;
@@ -64,6 +73,9 @@ body .alt-bg {
 .dark-bg > .text-underline {
   border-color: #FCFCFC;
 }
+.dark-bg > .box {
+  background: #03333B;
+}
 .light-bg {
   background: #FFFFFF;
   color: #0D1E28;
@@ -73,6 +85,9 @@ body .alt-bg {
 }
 .light-bg > .text-underline {
   border-color: #0D1E28;
+}
+.light-bg > .box {
+  background: #FFFFFF;
 }
 h1,
 .h1 {
@@ -141,14 +156,16 @@ h2,
   }
 }
 h3,
-.h3 {
+.h3,
+.headline {
   font-family: 'DinPro', Verdana, Geneva, sans-serif;
   font-weight: 600;
   text-transform: none;
 }
 @media screen and (max-width: 501px) {
   h3,
-  .h3 {
+  .h3,
+  .headline {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
@@ -156,7 +173,8 @@ h3,
 }
 @media screen and (min-width: 501px) {
   h3,
-  .h3 {
+  .h3,
+  .headline {
     font-size: 1.1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
@@ -164,7 +182,8 @@ h3,
 }
 @media screen and (min-width: 769px) {
   h3,
-  .h3 {
+  .h3,
+  .headline {
     font-size: 1.1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
@@ -200,23 +219,291 @@ h4,
     margin-bottom: 1rem;
   }
 }
-p {
+p,
+.p {
+  font-family: 'DinPro', Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  text-transform: none;
   margin-bottom: 1rem;
+}
+p.big,
+.p.big {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+p.mega,
+.p.mega {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+p.giga,
+.p.giga {
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+@media screen and (max-width: 501px) {
+  p.big,
+  .p.big {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  p.mega,
+  .p.mega {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  p.giga,
+  .p.giga {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  p.big,
+  .p.big {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  p.mega,
+  .p.mega {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  p.giga,
+  .p.giga {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  p.big,
+  .p.big {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  p.mega,
+  .p.mega {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  p.giga,
+  .p.giga {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+p strong,
+p.strong,
+.p strong,
+.p.strong,
+strong p,
+.strong p,
+strong .p {
+  font-family: 'DinPro', Verdana, Geneva, sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  margin-bottom: 1rem;
+}
+p strong.big,
+p.strong.big,
+.p strong.big,
+.p.strong.big,
+strong p.big,
+.strong p.big,
+strong .p.big {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+p strong.mega,
+p.strong.mega,
+.p strong.mega,
+.p.strong.mega,
+strong p.mega,
+.strong p.mega,
+strong .p.mega {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+p strong.giga,
+p.strong.giga,
+.p strong.giga,
+.p.strong.giga,
+strong p.giga,
+.strong p.giga,
+strong .p.giga {
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+@media screen and (max-width: 501px) {
+  p strong,
+  p.strong,
+  .p strong,
+  .p.strong,
+  strong p,
+  .strong p,
+  strong .p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  p strong.big,
+  p.strong.big,
+  .p strong.big,
+  .p.strong.big,
+  strong p.big,
+  .strong p.big,
+  strong .p.big {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  p strong.mega,
+  p.strong.mega,
+  .p strong.mega,
+  .p.strong.mega,
+  strong p.mega,
+  .strong p.mega,
+  strong .p.mega {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  p strong.giga,
+  p.strong.giga,
+  .p strong.giga,
+  .p.strong.giga,
+  strong p.giga,
+  .strong p.giga,
+  strong .p.giga {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  p strong,
+  p.strong,
+  .p strong,
+  .p.strong,
+  strong p,
+  .strong p,
+  strong .p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  p strong.big,
+  p.strong.big,
+  .p strong.big,
+  .p.strong.big,
+  strong p.big,
+  .strong p.big,
+  strong .p.big {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  p strong.mega,
+  p.strong.mega,
+  .p strong.mega,
+  .p.strong.mega,
+  strong p.mega,
+  .strong p.mega,
+  strong .p.mega {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  p strong.giga,
+  p.strong.giga,
+  .p strong.giga,
+  .p.strong.giga,
+  strong p.giga,
+  .strong p.giga,
+  strong .p.giga {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  p strong,
+  p.strong,
+  .p strong,
+  .p.strong,
+  strong p,
+  .strong p,
+  strong .p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  p strong.big,
+  p.strong.big,
+  .p strong.big,
+  .p.strong.big,
+  strong p.big,
+  .strong p.big,
+  strong .p.big {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  p strong.mega,
+  p.strong.mega,
+  .p strong.mega,
+  .p.strong.mega,
+  strong p.mega,
+  .strong p.mega,
+  strong .p.mega {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  p strong.giga,
+  p.strong.giga,
+  .p strong.giga,
+  .p.strong.giga,
+  strong p.giga,
+  .strong p.giga,
+  strong .p.giga {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+.quarter-margin {
+  margin-bottom: 0.25rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.half-margin {
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.single-margin {
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.double-margin {
+  margin-bottom: 2rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.triple-margin {
+  margin-bottom: 3rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.quad-margin {
+  margin-bottom: 4rem;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 a {
+  color: inherit;
+}
+a.link {
   color: #C98C1F;
-}
-blockquote {
-  font-family: 'Archer', "Times New Roman", Times, serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: .9rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-left: 2px solid #61BFE8;
-}
-blockquote .author {
-  margin: 0.5rem 0rem;
 }
 img {
   margin-bottom: 1rem;
@@ -243,6 +530,21 @@ ul ol {
   list-style-type: lower-latin;
   list-style-position: inside;
 }
+@media screen and (max-width: 501px) {
+  ul.fingerList {
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  ul.fingerList {
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  ul.fingerList {
+    margin-left: 0.5rem;
+  }
+}
 ul.fingerList li::before {
   content: '☞ ';
 }
@@ -250,21 +552,6 @@ li {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-@media screen and (max-width: 501px) {
-  li {
-    margin-left: 0.5rem;
-  }
-}
-@media screen and (min-width: 501px) {
-  li {
-    margin-left: 0.5rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  li {
-    margin-left: 0.5rem;
-  }
 }
 @media screen and (max-width: 501px) {
   .pageLast {
@@ -320,6 +607,18 @@ li {
 .noBottomMargin {
   margin-bottom: 0rem;
 }
+blockquote {
+  font-family: 'Archer', "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-left: 2px solid #61BFE8;
+}
+blockquote .author {
+  margin: 0.5rem 0rem;
+}
 .box {
   border: solid 0.1rem #CFD2D4;
   border-radius: 0.2rem;
@@ -327,9 +626,39 @@ li {
   padding-bottom: 1rem;
   box-shadow: 0rem 0.15rem 0rem rgba(13, 30, 40, 0.15);
 }
+.dark-bg .box {
+  background: #03333B;
+}
+.light-bg .box {
+  background: #FFFFFF;
+}
 .slide .topBracket {
   display: block;
   width: 100%;
   height: 1px;
   visibility: hidden;
+}
+.stat {
+  width: 100%;
+}
+.stat p {
+  margin: 0;
+}
+.stat img {
+  margin: 0;
+}
+.stat img.icon {
+  display: inline-block;
+}
+.stat .text {
+  display: block;
+  float: left;
+  width: calc(100% - 3.5rem);
+  background: #FF0000;
+}
+.stat .image {
+  display: block;
+  float: left;
+  width: 3rem;
+  margin-right: .5rem;
 }

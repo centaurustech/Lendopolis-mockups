@@ -41,22 +41,65 @@ nav {
   font-size: .65rem;
   line-height: 1rem;
   text-transform: uppercase;
-}
-.dark-bg nav {
-  font-weight: 500;
+  display: block;
 }
 .light-bg nav {
   font-weight: 600;
 }
-nav .active,
-nav .inactive {
-  display: inline-block;
+.dark-bg nav {
+  font-weight: 500;
+}
+nav a {
+  display: block;
+  float: left;
+  text-decoration: none;
+  color: inherit;
+}
+nav a.active,
+nav a.inactive {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   vertical-align: middle;
 }
-nav .active {
+nav a.active {
   border-bottom: 0.1rem solid #C98C1F;
+}
+.light-bg nav a.active {
+  color: #0D1E28;
+}
+.dark-bg nav a.active {
+  color: #FCFCFC;
+}
+.light-bg nav a.inactive {
+  color: #566269;
+}
+.light-bg nav a.inactive:hover {
+  color: #0D1E28;
+}
+.dark-bg nav a.inactive {
+  color: #B1BFC2;
+}
+.dark-bg nav a.inactive:hover {
+  color: #FCFCFC;
+}
+.light-bg header nav a.inactive {
+  color: #0D1E28;
+}
+.dark-bg header nav a.inactive {
+  color: #FCFCFC;
+}
+nav .separator {
+  display: block;
+  float: left;
+}
+nav .separator::before {
+  content: ' • ';
+}
+.light-bg nav .separator {
+  color: #566269;
+}
+.dark-bg nav .separator {
+  color: #B1BFC2;
 }
 @media screen and (max-width: 501px) {
   nav.subnav {
@@ -73,22 +116,39 @@ nav .active {
     margin-bottom: 3rem;
   }
 }
-nav.subnav .inactive,
-nav.subnav .separator {
+menu.summary a {
+  display: block;
+  font-family: DinPro;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  font-size: .8rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+.light-bg menu.summary a.active {
+  background: #F4F4F5;
+  color: #0D1E28;
+}
+.light-bg menu.summary a.inactive {
   color: #566269;
 }
-nav.subnav .separator {
-  display: inline-block;
+.light-bg menu.summary a.inactive:hover {
+  color: #0D1E28;
+  background: #F4F4F5;
 }
-.dark-bg nav.subnav .inactive,
-.dark-bg nav.subnav .separator {
+.dark-bg menu.summary a.active {
+  background: #0F3C44;
+  color: #FCFCFC;
+}
+.dark-bg menu.summary a.inactive {
   color: #B1BFC2;
 }
-.light-bg nav.subnav .inactive,
-.light-bg nav.subnav .separator {
-  color: #566269;
+.dark-bg menu.summary a.inactive:hover {
+  color: #FCFCFC;
+  background: #0F3C44;
 }
-nav a {
-  text-decoration: none;
-  color: inherit;
+menu.summary .active {
+  border: none;
+  font-weight: 500;
 }

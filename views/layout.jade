@@ -10,9 +10,10 @@ html
 		link(rel='stylesheet', href='/stylesheets/nav.css')
 		link(rel='stylesheet', href='/stylesheets/footer.css')
 	body
-		include header
-		block content
-		include footer
+		.light-bg
+			include header
+			block content
+			include footer
 
 		script(src='/javascripts/jquery-2.1.4.min.js')
 		script(src='/javascripts/global.js')

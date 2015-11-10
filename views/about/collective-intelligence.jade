@@ -1,322 +1,251 @@
-extends ../layout
+extends about
 
-block content
-	.container
-		.row
-			.column.col-12-12
-					h1
-						span.text-underline= title
+block content_2
 
-		nav.subnav
-			.inactive
-					a(href='/about/manifesto' style='display: inline-block') Manifeste
-			.separator •
-			.active
-					a(href='/about/collective-intelligence' style='display: inline-block') L'intelligence collective
-			.separator •
-			.inactive
-					a(href='/about/statistics' style='display: inline-block') Statistiques
-			.separator •
-			.inactive
-					a(href='/about/team' style='display: inline-block') L'équipe
-			.separator •
-			.inactive
-					a(href='/about/mentors' style='display: inline-block') À Mentors
-			.separator •
-			.inactive
-					a(href='/about/press' style='display: inline-block') Articles
-			.separator •
-			.inactive
-					a(href='/about/presskit' style='display: inline-block') Press kit
-			.separator •
-			.inactive
-					a(href='/about/service-providers' style='display: inline-block') Prestataires
-			.separator •
-			.inactive
-					a(href='/about/contact' style='display: inline-block') Contact
+	.row
+		.column.col-md-7-24.display-md
+			.slide
+				.topBracket
+				.slider
+					.box
+						menu.summary
+							h3 Sommaire
+							a(href='#').inactive Les vertus de l'intelligence collective
+							a(href='#').inactive Le modèle des enchères inversées
+							a(href='#').active.alt-bg Les fonds commun déguisés en plateformes de crowdlending							
+							a(href='#').inactive Les leaders dans les pays anglo-saxons
+							a(href='#').inactive La vision de LENDOPOLIS
+
+		.column.col-md-17-24.col-sm-10-12.col-xs-12-12
+			
+			h2 LENDOPOLIS, une plateforme de financement participatif ou crowdlending basée sur les vertus de l’intelligence collective
+
+			p
+				| LENDOPOLIS, lancée en 2014, est une solution du groupe KissKissBankBank Technologies, pionnier du crowdfunding (ou financement participatif) en France avec le lancement de la plateforme 
+				a(href='http://www.kisskissbankbank.com/' target='blank').link KissKissBankBank
+				|  en 2009 et d’
+				a(href='https://www.hellomerci.com/fr' target='blank').link hellomerci
+				|  en 2013.
+
+			p.
+				KissKissBankBank et hellomerci sont aujourd’hui toutes les deux parmi les  leaders européennes sur leurs marchés et leurs modèles reposent sur celui du crowdfunding et du concept de l’intelligence collective : 
+
+			blockquote
+				| “Les prises de décisions sont plus objectives et pertinentes lorsqu’elles sont issues de réflexions menées collectivement par des centaines de personnes plutôt que par une seule, aussi experte soit-elle”
+				.author.
+					— Vincent Ricordeau, CEO & Co-fondateur
+
+			p.h3Last.
+				Ainsi, les valeurs du crowdfunding font partie intégrante de l’ADN de LENDOPOLIS et son modèle est naturellement basé sur les vertus de l’intelligence collective.
+
+			h3 Intelligence collective : comment est-ce que cela fonctionne concrètement ?
+
+			h4 1. Sélection par la plateforme
+
+			p.
+				La plateforme de crowdlending (ou financement participatif sous forme de prêt) analyse et sélectionne les projets en fonction de critères précis et pré-définis, dont notamment :
+
+			ul.fingerList
+				li(type='circle') La maturité de l’entreprise (2 ans d’existence sur LENDOPOLIS)
+				li(type='circle') Le positionnement stratégique de l’entreprise sur son marché
+				li(type='circle') La pertinence du projet de l’entreprise et la vision du dirigeant
+				li(type='circle') L’atteinte du seuil de rentabilité (et donc la capacité de l’entreprise à rembourser l’emprunt)
+
+			p
+				| L’analyse financière aboutit à l’allocation d’une 
+				a(href='/howto/invest-risk-analysis').link note de risque
+				|  interne qui, couplée à la durée de l’emprunt, va déterminer le taux d’intérêt pour l’entreprise.
+
+			p.
+				Si le taux d’intérêt est accepté par l’entreprise, son projet est mis en ligne sur la plateforme et devient visible de la communauté de prêteurs.
+
+			p.
+				Dans le cadre de cette analyse et de cette sélection, LENDOPOLIS s’est entourée de partenaires stratégiques : 
+
+			ul.fingerList.h4Last
+				li(type='circle')
+					a(href='/about/mentors/le-conseil-superieur-de-l-ordre-des-experts-comptables').link Le Conseil Supérieur de l’Ordre des Experts-Comptables
+					| , avec lequel l’Attestation d’Informations Financières a été créée. Chaque projet devra valider la cohérence de son projet avec son expert-comptable et détenir cette attestation officielle avant d’emprunter sur LENDOPOLIS ; ainsi qu’une deuxième attestation optionnelle de bonne utilisation des fonds pour collecter à nouveau sur la plateforme.
+
+				li(type='circle')
+					a(href='/about/mentors/gan-assurances').link Gan Assurances
+					|, avec lequel le Bilan Assurantiel a été créé : un questionnaire permettant au porteur de projet d’évaluer la qualité de sa gestion des risques et de sa couverture assurantielle. Gan Assurances sponsorise également chaque mois une collecte réussie en prenant en charge la commission de LENDOPOLIS.
+
+				li(type='circle')
+					| Scores &#38 Décisions, une solution qui aggrège et interprète les informations financières et juridiques sur les entreprises.
+
+			h4 2. L’intelligence collective
+
+			p.
+				Une fois les entreprises sélectionnées, leurs projets sont visibles par tous les membres de la communauté de prêteurs qui individuellement :
+
+			p.
+				Analysent le projet sur la base des informations fournies par la plateforme. Ainsi, la transparence entre la plateforme et sa communauté est clé pour permettre aux prêteurs de prendre leurs décisions sans asymétrie d’information ;
+
+			ul.fingerList
+				li(type='circle').
+					Échangent avec le dirigeant s’ils ont des interrogations sur son projet de développement, son marché, sa stratégie, etc.
+
+				li(type='circle').
+					S’informent sur les questions et les réponses des autres membres de la communauté
+
+				li(type='circle').
+					Et décident en toute autonomie s’ils prêtent ou non au projet
+
+			p.
+				Si l’objectif de collecte du projet est atteint, l’emprunt est validé et la société est financée ! Dans le cas inverse,si l’objectif n’est pas atteint, les prêteurs ayant contribué sont automatiquement remboursés.
+
+			p.h3Last.
+				Ainsi, ce sont bien les membres de la communauté qui décident, collectivement, de la validation de l’emprunt.
+
+			h3 Quels sont les avantages du positionnement de LENDOPOLIS ?
+
+			p.
+				Grâce à l’intelligence collective, il y a une triple sélection des projets (expert-comptables + plateforme + communauté de prêteurs). Cette triple sélection permettra de diminuer les taux de défaut des entreprises à terme.
+
+			p.
+				La muticiplicité de prêteurs permet à l’emprunteur de mener une campagne de communication auprès d’une large communauté, qui, le cas échéant, s’identifiera au projet et lui sera fidèle. L’emprunteur pourra régulièrement re-solliciter sa communauté pour d’autres projets à venir.
+
+			p.
+				L’intelligence collective qui divise la prise de risque en une multitude d’individus se substitue ainsi aux cautions ou garanties réclamées habituellement par les banques.
+
+			p.
+				Les échanges entre le dirigeant et la communauté de prêteurs peuvent permettre de faire émerger des opportunités (pour les prêteurs et l’emprunteur) qui vont bien au-delà d’un simple prêt.
+
+			p.
+				La fixation du taux d’intérêt par la plateforme post analyse du risque permet aux prêteurs, comme à l’emprunteur, de s’assurer que le taux d’intérêt est en ligne avec le risque intrinsèque de l’entreprise. 
+
+			p.
+				Cela permet également à l’emprunteur d’intégrer directement ce taux dans son Business Plan (et donne donc à la plateforme la possibilité de l’afficher).
+
+			p.h3Last.
+				Le taux d’intérêt est visible des prêteurs dès la mise en ligne du projet (et ne change plus). Ainsi, il y a une totale transparence entre les prêteurs, l’emprunteur et la plateforme.
+
+			h3 Quels sont les inconvénients du positionnement de LENDOPOLIS ?
+
+			p.
+				Tous les projets ne sont pas financés. Mais toute la force de l’intelligence collective réside dans ce constat. Certains projets, bien que sélectionnés par la plateforme, ne réussissent pas à convaincre la communauté de prêteurs.
+
+			p.h2Last.
+				La durée entre le dépôt du projet sur la plateforme et son financement effectif peut être légèrement ralongée par (i) l’analyse et la fixation du taux d’intérêt par la plateforme en amont et (ii) la collecte/l’intelligence collective. Néanmoins, grâce aux différents partenariats noués et aux prestataires de services choisis, l’analyse ne dépasse pas 48h chez LENDOPOLIS, et les collectes durent 30 jours maximum.
+
+			h2 Le modèle des enchères inversées
+
+			p.h3Last.
+				Certaines plateformes de crowdlending ont recours aux enchères inversées pour fixer le taux d’intérêt auquel l’entreprise empruntera.
+
+			h3 Comment fonctionne le modèle des enchères inversées ?
+
+			p.
+				Dans le cas des enchères inversées, la plateforme sélectionne les projets qui seront mis en ligne puis laisse les prêteurs fixer le taux d’intérêt auquel ils souhaitent prêter en fonction de : 
+
+			ul.fingerList
+				li La notation du projet par la plateforme
+				li Leur appréhension du risque de défaut de l’entreprise
+				li Les offres précedemment réalisées par d’autres prêteurs
+			
+			p.
+				Ce modèle repose donc sur deux postulats de base : 
 				
-		.row
-			.column.col-md-7-24.display-md
-				.slide
-					.topBracket
-					.box.slider
-						ul
-							li Les vertus de l'intelligence collective
-								//- ul
-								//- 	li Comment est-ce que cela fonctionne ?
-								//- 	li Les avantages de LENDOPOLIS
-								//- 	li Les inconvénients
-							li Le modèle des enchères inversées
-								//- ul
-								//- 	li Comment fonctionne ce modèle ?
-								//- 	li Les avantages du modèle
-								//- 	li Les inconvénients
-							li Les fonds commun déguisés en plateformes de crowdlending
-								//- ul
-								//- 	li Comment le modèle de mandat par prêteurs institutionnels fonctionne ?
-								//- 	li Les avantages du modèle
-								//- 	li Les inconvénients
-							li Les leaders dans les pays anglo-saxons
-							li La vision de LENDOPOLIS
-
-					//- .box.fixed
-					//- 	ul
-					//- 		li Les vertus de l'intelligence collective
-					//- 			//- ul
-					//- 			//- 	li Comment est-ce que cela fonctionne ?
-					//- 			//- 	li Les avantages de LENDOPOLIS
-					//- 			//- 	li Les inconvénients
-					//- 		li Le modèle des enchères inversées
-					//- 			//- ul
-					//- 			//- 	li Comment fonctionne ce modèle ?
-					//- 			//- 	li Les avantages du modèle
-					//- 			//- 	li Les inconvénients
-					//- 		li Les fonds commun déguisés en plateformes de crowdlending
-					//- 			//- ul
-					//- 			//- 	li Comment le modèle de mandat par prêteurs institutionnels fonctionne ?
-					//- 			//- 	li Les avantages du modèle
-					//- 			//- 	li Les inconvénients
-					//- 		li Les leaders dans les pays anglo-saxons
-					//- 		li La vision de LENDOPOLIS
-
-			.column.col-md-17-24.col-sm-10-12.col-xs-12-12
-				
-				h2 LENDOPOLIS, une plateforme de financement participatif ou crowdlending basée sur les vertus de l’intelligence collective
-
-				p
-					| LENDOPOLIS, lancée en 2014, est une solution du groupe KissKissBankBank Technologies, pionnier du crowdfunding (ou financement participatif) en France avec le lancement de la plateforme 
-					a(href='http://www.kisskissbankbank.com/' target='blank') KissKissBankBank
-					|  en 2009 et d’
-					a(href='https://www.hellomerci.com/fr' target='blank') hellomerci
-					|  en 2013.
-
-				p.
-					KissKissBankBank et hellomerci sont aujourd’hui toutes les deux parmi les  leaders européennes sur leurs marchés et leurs modèles reposent sur celui du crowdfunding et du concept de l’intelligence collective : 
-
-				blockquote
-					| “Les prises de décisions sont plus objectives et pertinentes lorsqu’elles sont issues de réflexions menées collectivement par des centaines de personnes plutôt que par une seule, aussi experte soit-elle”
-					.author.
-						— Vincent Ricordeau, CEO &#38 Co-fondateur
-
-				p.h3Last.
-					Ainsi, les valeurs du crowdfunding font partie intégrante de l’ADN de LENDOPOLIS et son modèle est naturellement basé sur les vertus de l’intelligence collective.
-
-				h3 Intelligence collective : comment est-ce que cela fonctionne concrètement ?
-
-				h4 1. Sélection par la plateforme
-
-				p.
-					La plateforme de crowdlending (ou financement participatif sous forme de prêt) analyse et sélectionne les projets en fonction de critères précis et pré-définis, dont notamment :
-
-				ul.fingerList
-					li(type='circle') La maturité de l’entreprise (2 ans d’existence sur LENDOPOLIS)
-					li(type='circle') Le positionnement stratégique de l’entreprise sur son marché
-					li(type='circle') La pertinence du projet de l’entreprise et la vision du dirigeant
-					li(type='circle') L’atteinte du seuil de rentabilité (et donc la capacité de l’entreprise à rembourser l’emprunt)
-
-				p
-					| L’analyse financière aboutit à l’allocation d’une 
-					a(href='/howto/invest-risk-analysis') note de risque
-					|  interne qui, couplée à la durée de l’emprunt, va déterminer le taux d’intérêt pour l’entreprise.
-
-				p.
-					Si le taux d’intérêt est accepté par l’entreprise, son projet est mis en ligne sur la plateforme et devient visible de la communauté de prêteurs.
-
-				p.
-					Dans le cadre de cette analyse et de cette sélection, LENDOPOLIS s’est entourée de partenaires stratégiques : 
-
-				ul.fingerList.h4Last
-					li(type='circle')
-						a(href='/about/mentors/le-conseil-superieur-de-l-ordre-des-experts-comptables') Le Conseil Supérieur de l’Ordre des Experts-Comptables
-						| , avec lequel l’Attestation d’Informations Financières a été créée. Chaque projet devra valider la cohérence de son projet avec son expert-comptable et détenir cette attestation officielle avant d’emprunter sur LENDOPOLIS ; ainsi qu’une deuxième attestation optionnelle de bonne utilisation des fonds pour collecter à nouveau sur la plateforme.
-
-					li(type='circle')
-						a(href='/about/mentors/gan-assurances') Gan Assurances
-						|, avec lequel le Bilan Assurantiel a été créé : un questionnaire permettant au porteur de projet d’évaluer la qualité de sa gestion des risques et de sa couverture assurantielle. Gan Assurances sponsorise également chaque mois une collecte réussie en prenant en charge la commission de LENDOPOLIS.
-
-					li(type='circle')
-						| Scores &#38 Décisions, une solution qui aggrège et interprète les informations financières et juridiques sur les entreprises.
+			ul.fingerList.h3Last
+				li.
+					La connaissance des prêteurs du monde financier et de celui de la PME/TPE est assez élevée pour appréhender le risque de défaut d’une entreprise.
 
-				h4 2. L’intelligence collective
+				li.
+					Le marché de l’offre et de la demande est assez éfficient pour fixer un taux d’intérêt cohérent avec le risque intrinsèque de l’entreprise.
 
-				p.
-					Une fois les entreprises sélectionnées, leurs projets sont visibles par tous les membres de la communauté de prêteurs qui individuellement :
+			h3 Quels sont les avantages du modèle des enchères inversées ?
 
-				p.
-					Analysent le projet sur la base des informations fournies par la plateforme. Ainsi, la transparence entre la plateforme et sa communauté est clé pour permettre aux prêteurs de prendre leurs décisions sans asymétrie d’information ;
+			p.h3Last.
+				Les enchères inversées permettent de diminuer la durée entre le dépôt du projet par l’emprunteur et sa mise en ligne. 
 
-				ul.fingerList
-					li(type='circle').
-						Échangent avec le dirigeant s’ils ont des interrogations sur son projet de développement, son marché, sa stratégie, etc.
+			h3 Quels sont les inconvénients du modèle des enchères inversées ?
 
-					li(type='circle').
-						S’informent sur les questions et les réponses des autres membres de la communauté
+			p.
+				Le crowdlending s’adresse à la foule, et non pas qu’à des experts de la finance et du monde des PME/TPE. La fixation du taux d’intérêt par des professionnels de l’analyse du risque semble donc plus propice à ce secteur.
 
-					li(type='circle').
-						Et décident en toute autonomie s’ils prêtent ou non au projet
+			p.
+				Le marché du crowdlending en France a moins de deux ans d’existence et à ce titre, le marché n’est pas encore très éfficient (offre/demande trop faible).
 
-				p.
-					Si l’objectif de collecte du projet est atteint, l’emprunt est validé et la société est financée ! Dans le cas inverse,si l’objectif n’est pas atteint, les prêteurs ayant contribué sont automatiquement remboursés.
+			p.h2Last.
+				Le fait que le taux d’intérêt ne soit pas connu à l’avance empêche les prêteurs comme l’emprunteur de qualifier les capacités de remboursement de l’entreprise dans le futur. 
 
-				p.h3Last.
-					Ainsi, ce sont bien les membres de la communauté qui décident, collectivement, de la validation de l’emprunt.
+			h2 Les fonds commun de titrisation déguisés en plateformes de crowdlending
 
-				h3 Quels sont les avantages du positionnement de LENDOPOLIS ?
+			p.
+				Le crowdlending s’adresse au grand public et son principe même réside dans la désintermédiation de l’investissement dans le PME/TPE. En effet, l’objectif d’une plateforme de crowdlending est de permettre à des particuliers de prêter de l’argent directement aux PME/TPE de leur choix et ainsi, de décider si les projets doivent être financer ou pas.
 
-				p.
-					Grâce à l’intelligence collective, il y a une triple sélection des projets (expert-comptables + plateforme + communauté de prêteurs). Cette triple sélection permettra de diminuer les taux de défaut des entreprises à terme.
+			p.h3Last.
+				Certaines plateformes se réclamant du crowdlending ont un tout autre objectif : digitaliser les fonds de dette classiques en impliquant les particuliers.
 
-				p.
-					La muticiplicité de prêteurs permet à l’emprunteur de mener une campagne de communication auprès d’une large communauté, qui, le cas échéant, s’identifiera au projet et lui sera fidèle. L’emprunteur pourra régulièrement re-solliciter sa communauté pour d’autres projets à venir.
+			h3 Comment est-ce que le modèle de mandat par des prêteurs institutionnels fonctionne concrètement ?
 
-				p.
-					L’intelligence collective qui divise la prise de risque en une multitude d’individus se substitue ainsi aux cautions ou garanties réclamées habituellement par les banques.
+			p.
+				La plateforme rassemble des prêteurs institutionnels qui se sont engagés à souscrire à tous les projets sélectionnés par la plateforme dans un fonds de titrisation. 
 
-				p.
-					Les échanges entre le dirigeant et la communauté de prêteurs peuvent permettre de faire émerger des opportunités (pour les prêteurs et l’emprunteur) qui vont bien au-delà d’un simple prêt.
+			p.
+				La plateforme sélectionne ensuite les projets qui correspondent aux critères d’investissement du fonds de titrisation. 
 
-				p.
-					La fixation du taux d’intérêt par la plateforme post analyse du risque permet aux prêteurs, comme à l’emprunteur, de s’assurer que le taux d’intérêt est en ligne avec le risque intrinsèque de l’entreprise. 
+			p.h3Last.
+				Une majorité du prêt est réservée aux prêteurs institutionnels. La partie restante est proposée aux prêteurs particuliers sur la plateforme. Puis au bout de 7 jours, le fonds de titrisation complète le prêt.
 
-				p.
-					Cela permet également à l’emprunteur d’intégrer directement ce taux dans son Business Plan (et donne donc à la plateforme la possibilité de l’afficher).
+			h3 Quels sont les avantages ?
 
-				p.h3Last.
-					Le taux d’intérêt est visible des prêteurs dès la mise en ligne du projet (et ne change plus). Ainsi, il y a une totale transparence entre les prêteurs, l’emprunteur et la plateforme.
+			p.
+				Rapidité dans le complétion du financement grâce à la disponibilité immédiate des fonds par les prêteurs institutionnels.
 
-				h3 Quels sont les inconvénients du positionnement de LENDOPOLIS ?
+			p.h3Last.
+				Tous les projets sont financés, même si le projet n’a pas séduit les prêteurs particuliers.
 
-				p.
-					Tous les projets ne sont pas financés. Mais toute la force de l’intelligence collective réside dans ce constat. Certains projets, bien que sélectionnés par la plateforme, ne réussissent pas à convaincre la communauté de prêteurs.
+			h3 Quels sont les inconvénients ?
 
-				p.h2Last.
-					La durée entre le dépôt du projet sur la plateforme et son financement effectif peut être légèrement ralongée par (i) l’analyse et la fixation du taux d’intérêt par la plateforme en amont et (ii) la collecte/l’intelligence collective. Néanmoins, grâce aux différents partenariats noués et aux prestataires de services choisis, l’analyse ne dépasse pas 48h chez LENDOPOLIS, et les collectes durent 30 jours maximum.
+			ul.fingerList
+				li(type='circle').
+					Ce modèle va à l’encontre de l’intelligence collective. La plateforme sélectionne seule les projets et les prêteurs particuliers ne peuvent en aucun cas influencer la réussite ou non de la collecte de fonds. 
 
-				h2 Le modèle des enchères inversées
+				li(type='circle').
+					Il n’y a aucun échange entre les prêteurs et les dirigeants pouvant ainsi créer une asymétrie d’information. La transparence sur les données financières ( Bilans et Business Plans ) n’existe pas.
 
-				p.h3Last.
-					Certaines plateformes de crowdlending ont recours aux enchères inversées pour fixer le taux d’intérêt auquel l’entreprise empruntera.
+				li(type='circle').
+					L’emprunteur ne fait quasiment pas de communication grand public puisque les collectes sont très courtes et que les prêteurs particuliers ne représentent qu’une très petite minorité.
 
-				h3 Comment fonctionne le modèle des enchères inversées ?
+			p.h2Last.
+				| Conclusion : ce type de plateformes ressemblent à du financement participatif mais en rejetant ses fondamentaux.
+				br
+				| Malgré tout, elles ont le mérite de flécher de l’argent provenant de leurs fonds de titrisation vers l’économie réelle plutôt que vers les marchés financiers. 
 
-				p.
-					Dans le cas des enchères inversées, la plateforme sélectionne les projets qui seront mis en ligne puis laisse les prêteurs fixer le taux d’intérêt auquel ils souhaitent prêter en fonction de : 
+			h2 Le modèle des leaders dans les pays Anglo-Saxons 
 
-				ul.fingerList
-					li La notation du projet par la plateforme
-					li Leur appréhension du risque de défaut de l’entreprise
-					li Les offres précedemment réalisées par d’autres prêteurs
-				
-				p.
-					Ce modèle repose donc sur deux postulats de base : 
-					
-				ul.fingerList.h3Last
-					li.
-						La connaissance des prêteurs du monde financier et de celui de la PME/TPE est assez élevée pour appréhender le risque de défaut d’une entreprise.
+			p.
+				En France, le secteur du crowdlending est encore jeune. Ainsi, chacun des acteurs se positionne avec ses différentiations voire même sur des modèles opposés. 
 
-					li.
-						Le marché de l’offre et de la demande est assez éfficient pour fixer un taux d’intérêt cohérent avec le risque intrinsèque de l’entreprise.
+			p.
+				Il est difficile de prévoir l’évolution du crowdlending en France et de savoir quel modèle s’imposera. Néanmoins, nous pouvons constater que dans certains pays plus matures sur ce segment, comme le Royaume-Uni ou les États-Unis, les plateformes qui s’imposent ont toutes un modèle basé initialement sur l’intelligence collective. 
 
-				h3 Quels sont les avantages du modèle des enchères inversées ?
+			p
+				| Ainsi, Funding Circle, qui opère sur le même modèle que LENDOPOLIS (fixation du taux d’intérêt par la plateforme et intelligence collective), a réussi à garder des taux de défaut en dessous de ceux constatés dans les banques 
+				a(href='https://www.fundingcircle.com/statistics' target='blank').link (voir leurs statistiques)
+				|  grâce à l’intelligence collective : lors des deux premières années, seuls les prêteurs particuliers pouvaient particper aux collectes.
 
-				p.h3Last.
-					Les enchères inversées permettent de diminuer la durée entre le dépôt du projet par l’emprunteur et sa mise en ligne. 
+			img(src='/images/about/Lendopolis_04_A_propos_0001_intelligence-collective_00_illustration-funding-circle.jpg').h2Last
 
-				h3 Quels sont les inconvénients du modèle des enchères inversées ?
+			h2 La vision de LENDOPOLIS
 
-				p.
-					Le crowdlending s’adresse à la foule, et non pas qu’à des experts de la finance et du monde des PME/TPE. La fixation du taux d’intérêt par des professionnels de l’analyse du risque semble donc plus propice à ce secteur.
+			p.
+				Tout comme Funding Circle, nous pensons que le bon développement d’une plateforme de crowdlending doit d’abord passer par une période pendant laquelle seuls les prêteurs particuliers peuvent participer. L’intelligence collective pendant cette période permet à la plateforme d’affiner ses critères de sélection et d’améliorer ses taux de défaut grâce à une communauté de prêteurs participant activement, via des échanges avec les dirigeants, à l’analyse des projets.
 
-				p.
-					Le marché du crowdlending en France a moins de deux ans d’existence et à ce titre, le marché n’est pas encore très éfficient (offre/demande trop faible).
+			p.
+				Pour autant, nous sommes convaincus que les personnes morales (entreprises et holdings patrimoniales), à court terme, et les investisseurs institutionnels (banques et fonds d’investissement), a plus ou moyen terme, auront un rôle majeur à jouer sur des plateformes comme LENDOPOLIS. Mais nous pensons que leur intervention ne doit pas se substituer au grand public, cela biaisera forcément la force l’intelligence collective. Nous percevons leur rôle comme un complément de financement post validation de la collecte par les prêteurs particuliers, minimisant ainsi leur risque et donc le taux de défaut. 
 
-				p.h2Last.
-					Le fait que le taux d’intérêt ne soit pas connu à l’avance empêche les prêteurs comme l’emprunteur de qualifier les capacités de remboursement de l’entreprise dans le futur. 
+			p.
+				Notons d'ailleurs que Lending Club aux USA est entrain de limiter le % d’activité des fonds de titrisation sur sa plateforme après une période ou le public avait presque disparu au profits des institutionnels.
 
-				h2 Les fonds commun de titrisation déguisés en plateformes de crowdlending
+			p.
+				Nous souhaitons populariser l’investissement gràce au financement participatif et donner ainsi la possibilité au grand public de reprendre le pouvoir sur son argent en placant ses économies directement dans l'économie réelle. 
 
-				p.
-					Le crowdlending s’adresse au grand public et son principe même réside dans la désintermédiation de l’investissement dans le PME/TPE. En effet, l’objectif d’une plateforme de crowdlending est de permettre à des particuliers de prêter de l’argent directement aux PME/TPE de leur choix et ainsi, de décider si les projets doivent être financer ou pas.
-
-				p.h3Last.
-					Certaines plateformes se réclamant du crowdlending ont un tout autre objectif : digitaliser les fonds de dette classiques en impliquant les particuliers.
-
-				h3 Comment est-ce que le modèle de mandat par des prêteurs institutionnels fonctionne concrètement ?
-
-				p.
-					La plateforme rassemble des prêteurs institutionnels qui se sont engagés à souscrire à tous les projets sélectionnés par la plateforme dans un fonds de titrisation. 
-
-				p.
-					La plateforme sélectionne ensuite les projets qui correspondent aux critères d’investissement du fonds de titrisation. 
-
-				p.h3Last.
-					Une majorité du prêt est réservée aux prêteurs institutionnels. La partie restante est proposée aux prêteurs particuliers sur la plateforme. Puis au bout de 7 jours, le fonds de titrisation complète le prêt.
-
-				h3 Quels sont les avantages ?
-
-				p.
-					Rapidité dans le complétion du financement grâce à la disponibilité immédiate des fonds par les prêteurs institutionnels.
-
-				p.h3Last.
-					Tous les projets sont financés, même si le projet n’a pas séduit les prêteurs particuliers.
-
-				h3 Quels sont les inconvénients ?
-
-				ul.fingerList
-					li(type='circle').
-						Ce modèle va à l’encontre de l’intelligence collective. La plateforme sélectionne seule les projets et les prêteurs particuliers ne peuvent en aucun cas influencer la réussite ou non de la collecte de fonds. 
-
-					li(type='circle').
-						Il n’y a aucun échange entre les prêteurs et les dirigeants pouvant ainsi créer une asymétrie d’information. La transparence sur les données financières ( Bilans et Business Plans ) n’existe pas.
-
-					li(type='circle').
-						L’emprunteur ne fait quasiment pas de communication grand public puisque les collectes sont très courtes et que les prêteurs particuliers ne représentent qu’une très petite minorité.
- 
-				p.h2Last.
-					| Conclusion : ce type de plateformes ressemblent à du financement participatif mais en rejetant ses fondamentaux.
-					br
-					| Malgré tout, elles ont le mérite de flécher de l’argent provenant de leurs fonds de titrisation vers l’économie réelle plutôt que vers les marchés financiers. 
-
-				h2 Le modèle des leaders dans les pays Anglo-Saxons 
-
-				p.
-					En France, le secteur du crowdlending est encore jeune. Ainsi, chacun des acteurs se positionne avec ses différentiations voire même sur des modèles opposés. 
-
-				p.
-					Il est difficile de prévoir l’évolution du crowdlending en France et de savoir quel modèle s’imposera. Néanmoins, nous pouvons constater que dans certains pays plus matures sur ce segment, comme le Royaume-Uni ou les États-Unis, les plateformes qui s’imposent ont toutes un modèle basé initialement sur l’intelligence collective. 
-
-				p
-					| Ainsi, Funding Circle, qui opère sur le même modèle que LENDOPOLIS (fixation du taux d’intérêt par la plateforme et intelligence collective), a réussi à garder des taux de défaut en dessous de ceux constatés dans les banques 
-					a(href='https://www.fundingcircle.com/statistics' target='blank') (voir leurs statistiques)
-					|  grâce à l’intelligence collective : lors des deux premières années, seuls les prêteurs particuliers pouvaient particper aux collectes.
-
-				img(src='/images/about/Lendopolis_04_A_propos_0001_intelligence-collective_00_illustration-funding-circle.jpg').h2Last
-
-				h2 La vision de LENDOPOLIS
-
-				p.
-					Tout comme Funding Circle, nous pensons que le bon développement d’une plateforme de crowdlending doit d’abord passer par une période pendant laquelle seuls les prêteurs particuliers peuvent participer. L’intelligence collective pendant cette période permet à la plateforme d’affiner ses critères de sélection et d’améliorer ses taux de défaut grâce à une communauté de prêteurs participant activement, via des échanges avec les dirigeants, à l’analyse des projets.
-
-				p.
-					Pour autant, nous sommes convaincus que les personnes morales (entreprises et holdings patrimoniales), à court terme, et les investisseurs institutionnels (banques et fonds d’investissement), a plus ou moyen terme, auront un rôle majeur à jouer sur des plateformes comme LENDOPOLIS. Mais nous pensons que leur intervention ne doit pas se substituer au grand public, cela biaisera forcément la force l’intelligence collective. Nous percevons leur rôle comme un complément de financement post validation de la collecte par les prêteurs particuliers, minimisant ainsi leur risque et donc le taux de défaut. 
-
-				p.
-					Notons d'ailleurs que Lending Club aux USA est entrain de limiter le % d’activité des fonds de titrisation sur sa plateforme après une période ou le public avait presque disparu au profits des institutionnels.
-
-				p.
-					Nous souhaitons populariser l’investissement gràce au financement participatif et donner ainsi la possibilité au grand public de reprendre le pouvoir sur son argent en placant ses économies directement dans l'économie réelle. 
-
-				p.pageLast
-					| Nous avons convaincu 700 000 personnes de devenir micro-mécènes sur 
-					a(href='http://www.kisskissbankbank.com/' target='blank') KissKissBankBank
-					|  et 
-					a(href='https://www.hellomerci.com/' target='blank') hellomerci
-					| , nous avons l’ambition de convaincre autant de Français de devenir prêteurs sur Lendopolis.
-
-
-
-
-
-
-
-		
+			p.pageLast
+				| Nous avons convaincu 700 000 personnes de devenir micro-mécènes sur 
+				a(href='http://www.kisskissbankbank.com/' target='blank').link KissKissBankBank
+				|  et 
+				a(href='https://www.hellomerci.com/' target='blank').link hellomerci
+				| , nous avons l’ambition de convaincre autant de Français de devenir prêteurs sur Lendopolis.
