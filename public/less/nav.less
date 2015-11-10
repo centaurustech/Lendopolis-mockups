@@ -1,14 +1,11 @@
 @import '_colors';
 @import '_responsive';
 @import '_fonts';
+@import '_text-levels';
 @import '_styles';
 
 nav {
-	font-family: "FuturaStd", Helvetica, Arial, sans-serif;
-	font-weight: 600;
-	font-size: .65rem;
-	line-height: 1rem;
-	text-transform: uppercase;
+	.text_nav();
 	display: block;
 
 	.light-bg & { font-weight: 600; }
@@ -81,8 +78,8 @@ nav.subnav {
 menu.summary {
 	a {
 		display: block;
-		font-family: DinPro;
-		font-weight: 400;
+		// font-family: DinPro;
+		// font-weight: 400;
 		text-transform: none;
 		text-decoration: none;
 		font-size: .8rem;
