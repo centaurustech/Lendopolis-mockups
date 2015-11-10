@@ -44,12 +44,15 @@ html {
   font-size: 20px;
 }
 body {
+  font-family: 'DinPro', Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-size: .8rem;
+  line-height: 1rem;
   background: #FFFFFF;
   color: #0D1E28;
-  font-family: "DinPro", Helvetica, Arial, sans-serif;
-  font-size: .8rem;
-  font-weight: 400;
-  line-height: 1rem;
 }
 body .alt-bg {
   background: #F4F4F5;
@@ -94,7 +97,29 @@ h1,
   font-family: 'FuturaStd', Verdana, Geneva, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: .03em;
+}
+@media screen and (max-width: 501px) {
+  h1,
+  .h1 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  h1,
+  .h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  h1,
+  .h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
 }
 h1 .text-underline,
 .h1 .text-underline {
@@ -104,24 +129,18 @@ h1 .text-underline,
 @media screen and (max-width: 501px) {
   h1,
   .h1 {
-    font-size: 1.4rem;
-    line-height: 2rem;
     margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 501px) {
   h1,
   .h1 {
-    font-size: 1.8rem;
-    line-height: 2rem;
     margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 769px) {
   h1,
   .h1 {
-    font-size: 2.2rem;
-    line-height: 3rem;
     margin-bottom: 3rem;
   }
 }
@@ -130,13 +149,14 @@ h2,
   font-family: 'FuturaStd', Verdana, Geneva, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 @media screen and (max-width: 501px) {
   h2,
   .h2 {
     font-size: 1.2rem;
     line-height: 1.5rem;
-    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 501px) {
@@ -144,7 +164,6 @@ h2,
   .h2 {
     font-size: 1.4rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 769px) {
@@ -152,6 +171,23 @@ h2,
   .h2 {
     font-size: 1.6rem;
     line-height: 2rem;
+  }
+}
+@media screen and (max-width: 501px) {
+  h2,
+  .h2 {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  h2,
+  .h2 {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  h2,
+  .h2 {
     margin-bottom: 2rem;
   }
 }
@@ -161,6 +197,8 @@ h3,
   font-family: 'DinPro', Verdana, Geneva, sans-serif;
   font-weight: 600;
   text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 @media screen and (max-width: 501px) {
   h3,
@@ -168,7 +206,6 @@ h3,
   .headline {
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 501px) {
@@ -177,6 +214,19 @@ h3,
   .headline {
     font-size: 1.1rem;
     line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 501px) {
+  h3,
+  .h3,
+  .headline {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  h3,
+  .h3,
+  .headline {
     margin-bottom: 1rem;
   }
 }
@@ -184,8 +234,6 @@ h3,
   h3,
   .h3,
   .headline {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
     margin-bottom: 1rem;
   }
 }
@@ -194,13 +242,14 @@ h4,
   font-family: 'DinPro', Verdana, Geneva, sans-serif;
   font-weight: 500;
   text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 @media screen and (max-width: 501px) {
   h4,
   .h4 {
     font-size: .8rem;
     line-height: 1rem;
-    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 501px) {
@@ -208,14 +257,23 @@ h4,
   .h4 {
     font-size: .9rem;
     line-height: 1rem;
+  }
+}
+@media screen and (max-width: 501px) {
+  h4,
+  .h4 {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  h4,
+  .h4 {
     margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 769px) {
   h4,
   .h4 {
-    font-size: .9rem;
-    line-height: 1rem;
     margin-bottom: 1rem;
   }
 }
@@ -224,73 +282,11 @@ p,
   font-family: 'DinPro', Verdana, Geneva, sans-serif;
   font-weight: 400;
   text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-size: .8rem;
+  line-height: 1rem;
   margin-bottom: 1rem;
-}
-p.big,
-.p.big {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-}
-p.mega,
-.p.mega {
-  font-size: 1.6rem;
-  line-height: 2rem;
-}
-p.giga,
-.p.giga {
-  font-size: 2.2rem;
-  line-height: 3rem;
-}
-@media screen and (max-width: 501px) {
-  p.big,
-  .p.big {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  p.mega,
-  .p.mega {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  p.giga,
-  .p.giga {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 501px) {
-  p.big,
-  .p.big {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-  p.mega,
-  .p.mega {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-  p.giga,
-  .p.giga {
-    font-size: 1.8rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  p.big,
-  .p.big {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-  p.mega,
-  .p.mega {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  p.giga,
-  .p.giga {
-    font-size: 2.2rem;
-    line-height: 3rem;
-  }
 }
 p strong,
 p.strong,
@@ -302,166 +298,11 @@ strong .p {
   font-family: 'DinPro', Verdana, Geneva, sans-serif;
   font-weight: 600;
   text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-size: .8rem;
+  line-height: 1rem;
   margin-bottom: 1rem;
-}
-p strong.big,
-p.strong.big,
-.p strong.big,
-.p.strong.big,
-strong p.big,
-.strong p.big,
-strong .p.big {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-}
-p strong.mega,
-p.strong.mega,
-.p strong.mega,
-.p.strong.mega,
-strong p.mega,
-.strong p.mega,
-strong .p.mega {
-  font-size: 1.6rem;
-  line-height: 2rem;
-}
-p strong.giga,
-p.strong.giga,
-.p strong.giga,
-.p.strong.giga,
-strong p.giga,
-.strong p.giga,
-strong .p.giga {
-  font-size: 2.2rem;
-  line-height: 3rem;
-}
-@media screen and (max-width: 501px) {
-  p strong,
-  p.strong,
-  .p strong,
-  .p.strong,
-  strong p,
-  .strong p,
-  strong .p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  p strong.big,
-  p.strong.big,
-  .p strong.big,
-  .p.strong.big,
-  strong p.big,
-  .strong p.big,
-  strong .p.big {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  p strong.mega,
-  p.strong.mega,
-  .p strong.mega,
-  .p.strong.mega,
-  strong p.mega,
-  .strong p.mega,
-  strong .p.mega {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-  p strong.giga,
-  p.strong.giga,
-  .p strong.giga,
-  .p.strong.giga,
-  strong p.giga,
-  .strong p.giga,
-  strong .p.giga {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 501px) {
-  p strong,
-  p.strong,
-  .p strong,
-  .p.strong,
-  strong p,
-  .strong p,
-  strong .p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  p strong.big,
-  p.strong.big,
-  .p strong.big,
-  .p.strong.big,
-  strong p.big,
-  .strong p.big,
-  strong .p.big {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-  p strong.mega,
-  p.strong.mega,
-  .p strong.mega,
-  .p.strong.mega,
-  strong p.mega,
-  .strong p.mega,
-  strong .p.mega {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-  p strong.giga,
-  p.strong.giga,
-  .p strong.giga,
-  .p.strong.giga,
-  strong p.giga,
-  .strong p.giga,
-  strong .p.giga {
-    font-size: 1.8rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  p strong,
-  p.strong,
-  .p strong,
-  .p.strong,
-  strong p,
-  .strong p,
-  strong .p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  p strong.big,
-  p.strong.big,
-  .p strong.big,
-  .p.strong.big,
-  strong p.big,
-  .strong p.big,
-  strong .p.big {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-  p strong.mega,
-  p.strong.mega,
-  .p strong.mega,
-  .p.strong.mega,
-  strong p.mega,
-  .strong p.mega,
-  strong .p.mega {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  p strong.giga,
-  p.strong.giga,
-  .p strong.giga,
-  .p.strong.giga,
-  strong p.giga,
-  .strong p.giga,
-  strong .p.giga {
-    font-size: 2.2rem;
-    line-height: 3rem;
-  }
 }
 .quarter-margin {
   margin-bottom: 0.25rem;
@@ -608,10 +449,13 @@ li {
   margin-bottom: 0rem;
 }
 blockquote {
-  font-family: 'Archer', "Times New Roman", Times, serif;
+  font-family: 'Archer', 'Times New Roman', Times, serif;
   font-weight: 500;
-  font-style: italic;
+  text-transform: italic;
+  text-decoration: none;
+  letter-spacing: none;
   font-size: .9rem;
+  line-height: 1rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-left: 2px solid #61BFE8;
@@ -655,6 +499,31 @@ blockquote .author {
   float: left;
   width: calc(100% - 3.5rem);
   background: #FF0000;
+}
+.stat .text p.number {
+  font-family: 'DinPro', Verdana, Geneva, sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 501px) {
+  .stat .text p.number {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  .stat .text p.number {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .stat .text p.number {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
 }
 .stat .image {
   display: block;

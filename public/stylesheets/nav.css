@@ -36,11 +36,13 @@
   font-style: italic;
 }
 nav {
-  font-family: "FuturaStd", Helvetica, Arial, sans-serif;
+  font-family: 'FuturaStd', Verdana, Geneva, sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
   font-size: .65rem;
   line-height: 1rem;
-  text-transform: uppercase;
   display: block;
 }
 .light-bg nav {
@@ -118,8 +120,6 @@ nav .separator::before {
 }
 menu.summary a {
   display: block;
-  font-family: DinPro;
-  font-weight: 400;
   text-transform: none;
   text-decoration: none;
   font-size: .8rem;
