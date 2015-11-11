@@ -488,46 +488,57 @@ blockquote .author {
 .stat p {
   margin: 0;
 }
-.stat img {
-  margin: 0;
-}
-.stat img.icon {
-  display: inline-block;
-}
-.stat .text {
-  display: block;
-  float: left;
-  width: calc(100% - 3.5rem);
-  background: #FF0000;
-}
-.stat .text p.number {
-  font-family: 'DinPro', Verdana, Geneva, sans-serif;
-  font-weight: 600;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
-}
-@media screen and (max-width: 501px) {
-  .stat .text p.number {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 501px) {
-  .stat .text p.number {
-    font-size: 1.8rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  .stat .text p.number {
-    font-size: 2.2rem;
-    line-height: 3rem;
-  }
-}
 .stat .image {
   display: block;
   float: left;
   width: 3rem;
   margin-right: .5rem;
+}
+.stat .image svg {
+  width: 3rem;
+  height: 3rem;
+}
+.stat .text {
+  display: block;
+  float: left;
+  width: calc(100% - 3.5rem);
+}
+.stat .text p.number {
+  margin-top: -0.5rem;
+  font-family: 'DinPro', Verdana, Geneva, sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #61BFE8;
+}
+@media screen and (max-width: 501px) {
+  .stat .text p.number {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 501px) {
+  .stat .text p.number {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .stat .text p.number {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+.light-bg .stat .text p.label {
+  color: #0D1E28;
+}
+.dark-bg .stat .text p.label {
+  color: #FCFCFC;
+}
+.light-bg .stat .text p.sublabel {
+  color: #566269;
+}
+.dark-bg .stat .text p.sublabel {
+  color: #B1BFC2;
 }

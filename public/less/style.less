@@ -251,25 +251,40 @@ blockquote {
 	p {
 		margin: 0;
 	}
-	img {
-		margin: 0;
-		&.icon {
-			display: inline-block;
+	.image {
+		display: block;
+		float: left;
+		width: 3rem;
+		margin-right: .5rem;
+		svg {
+			width: 3rem;
+			height: 3rem;
 		}
 	}
 	.text {
 		display: block;
 		float: left;
 		width: calc(~"100% - 3.5rem");
-		background: #FF0000;
 		p.number {
-			.text_p_strong_giga();
+			margin-top: @minus-half-margin;
+			.text_p_strong_mega();
+			color: @color-brand-blue;
 		}
-	}
-	.image {
-		display: block;
-		float: left;
-		width: 3rem;
-		margin-right: .5rem;
+		p.label {
+			.light-bg & {
+				color: @color-active-light-bg;
+			}
+			.dark-bg & {
+				color: @color-active-dark-bg;
+			}
+		}
+		p.sublabel {
+			.light-bg & {
+				color: @color-inactive-light-bg;
+			}
+			.dark-bg & {
+				color: @color-inactive-dark-bg;
+			}
+		}
 	}
 }
