@@ -1,0 +1,17 @@
+.test-container {
+  width: 200px;
+  border: 1px solid black;
+}
+.test-container .test-boite {
+  background: red;
+}
+.test-container .test-boite .test-left {
+  display: inline-block;
+  background: yellow;
+  width: 60px;
+  height: 60px;
+}
+.test-container .test-boite .test-right {
+  display: inline-block;
+  background: purple;
+}

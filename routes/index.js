@@ -6,6 +6,19 @@ router.get('/', function(req, res, next) {
 	res.render('index', { title: 'Express' });
 });
 
+/* GET /transfer page. */
+router.get('/transfer', function(req, res, next) {
+	res.render('transfer', { title: 'Paiement par virement' });
+});
+
+/* ///////////////////////////////
+//////////////////////////////////
+//
+//  ABOUT
+//
+//////////////////////////////////
+/////////////////////////////// */
+
 /* GET about/manifesto page. */
 router.get('/about/manifesto', function(req, res, next) {
 	res.render('about/manifesto', { title: 'Manifeste' });

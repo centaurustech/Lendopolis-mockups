@@ -7,3 +7,4 @@ lessc less/header.less stylesheets/header.css
 lessc less/nav.less stylesheets/nav.css
 lessc less/reset.less stylesheets/reset.css
 lessc less/style.less stylesheets/style.css
+lessc less/test.less stylesheets/test.css

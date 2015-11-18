@@ -66,6 +66,11 @@ h2, .h2 {
 	@media screen and (min-width: @bkpt-xs-sm) { margin-bottom: @single-margin; }
 	// MD
 	@media screen and (min-width: @bkpt-sm-md) { margin-bottom: @double-margin; }
+	
+	p {
+		.light-bg & { color: @color-inactive-light-bg; }
+		.dark-bg & { color: @color-inactive-dark-bg; }
+	}
 }
 
 h3, .h3, .headline {
@@ -91,6 +96,11 @@ h4, .h4 {
 p, .p { 
 	.text_p();
 	margin-bottom: @single-margin;
+	&.right-justified { text-align: right }
+	&.annotation {
+		.light-bg & { color: @color-inactive-light-bg}
+		.dark-bg & { color: @color-inactive-dark-bg}
+	}
 }
 
 p strong, p.strong, .p strong, .p.strong,
@@ -228,13 +238,22 @@ blockquote {
 }
 
 .box {
-	border: @border-style-1-light-bg;
+	
 	border-radius: @border-radius-1;
 	padding: .5rem;
 	padding-bottom: 1rem;
 	box-shadow: @shadow-neat;
-	.dark-bg & { background : @color-background-dark-bg; }
-	.light-bg & { background : @color-background-light-bg; }
+	.light-bg & {
+		border: @border-style-1-light-bg;
+		background : @color-background-light-bg;
+	}
+	.dark-bg & {
+		border: @border-style-1-dark-bg;
+		background : @color-background-dark-bg;
+	}
+	&.no-shadow {
+		box-shadow: none;
+	}
 }
 
 .slide {
@@ -247,44 +266,132 @@ blockquote {
 }
 
 .stat {
+	display: block;
 	width: 100%;
-	p {
-		margin: 0;
-	}
-	.image {
-		display: block;
-		float: left;
-		width: 3rem;
-		margin-right: .5rem;
-		svg {
-			width: 3rem;
-			height: 3rem;
-		}
-	}
+	p { margin: 0; }
 	.text {
 		display: block;
 		float: left;
-		width: calc(~"100% - 3.5rem");
+		width: 100%;
 		p.number {
 			margin-top: @minus-half-margin;
-			.text_p_strong_mega();
-			color: @color-brand-blue;
+			.text_p_strong_big();
+			color: @color-brand-gold;
 		}
 		p.label {
-			.light-bg & {
-				color: @color-active-light-bg;
-			}
-			.dark-bg & {
-				color: @color-active-dark-bg;
-			}
+			.light-bg & { color: @color-active-light-bg; }
+			.dark-bg & { color: @color-active-dark-bg; }
 		}
 		p.sublabel {
-			.light-bg & {
-				color: @color-inactive-light-bg;
-			}
-			.dark-bg & {
-				color: @color-inactive-dark-bg;
+			.light-bg & { color: @color-inactive-light-bg; }
+			.dark-bg & { color: @color-inactive-dark-bg; }
+		}
+	}
+	&.big {
+		.text {
+			width: 100%;
+			p.number { 
+				.text_p_strong_mega();
+				color: @color-brand-blue;
 			}
 		}
+	}
+	&-with-icon {
+		display: block;
+		width: 100%;
+		p { margin: 0; }
+		.icon {
+			display: block;
+			@media screen and (max-width: @bkpt-md-lg) {
+				display: none;
+			}
+			float: left;
+			width: 2rem;
+			margin-right: .5rem;
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+		.text {
+			display: block;
+			float: left;
+			width: calc(~"100% - 2.5rem");
+			@media screen and (max-width: @bkpt-md-lg) {
+				width: 100%;
+			}
+			p.number {
+				margin-top: @minus-half-margin;
+				.text_p_strong_big();
+				color: @color-brand-gold;
+			}
+			p.label {
+				.light-bg & { color: @color-active-light-bg; }
+				.dark-bg & { color: @color-active-dark-bg; }
+			}
+			p.sublabel {
+				.light-bg & { color: @color-inactive-light-bg; }
+				.dark-bg & { color: @color-inactive-dark-bg; }
+			}
+		}
+		&.big {
+			.icon {
+				width: 3rem;
+				svg {
+					width: 3rem;
+					height: 3rem;
+				}
+			}
+			.text {
+				width: calc(~"100% - 3.5rem");
+				@media screen and (max-width: @bkpt-md-lg) {
+					width: 100%;
+				}
+				p.number { 
+					.text_p_strong_mega();
+					color: @color-brand-blue;
+				}
+			}
+		}
+	}
+}
+
+.section-separator {
+	display: block;
+	width: 100%;
+	height: .1rem;
+	.light-bg & { background: @color-border-light-bg; }
+	.dark-bg & { background: @color-border-dark-bg; }
+	// XS
+	@media screen and (max-width: @bkpt-xs-sm) { margin-bottom: @double-margin; }
+	// SM
+	@media screen and (min-width: @bkpt-xs-sm) { margin-bottom: @triple-margin; }
+	// MD
+	@media screen and (min-width: @bkpt-sm-md) { margin-bottom: @triple-margin; }
+}
+
+table {
+
+	border-collapse: 	separate;
+	border-radius: 		4px;
+	border: 			2px solid @color-border-light-bg;
+	margin-bottom: 		@single-margin;
+	// width: 100%;
+
+	thead { width: 100%; }
+
+	tr, th, td { margin: 0; padding: 0 }
+	th { vertical-align: middle; }
+	th, td {
+		text-align: 		left;
+		padding: 			@single-margin;
+		border-collapse: 	separate;
+		border-right: 		2px solid @color-border-light-bg;
+		border-bottom: 		2px solid @color-border-light-bg;
+		&:last-child { border-right: none; }
+	}
+
+	tr:last-child { 
+		td { border-bottom: none; }
 	}
 }
