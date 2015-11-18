@@ -510,22 +510,22 @@ blockquote .author {
   display: block;
   width: 100%;
 }
-.stat p {
-  margin: 0;
-}
 .stat .text {
   display: block;
   float: left;
   width: 100%;
 }
+.stat .text p {
+  margin: 0;
+}
 .stat .text p.number {
   margin-top: -0.5rem;
+  color: #C98C1F;
   font-family: 'DinPro', Verdana, Geneva, sans-serif;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0;
-  color: #C98C1F;
 }
 @media screen and (max-width: 501px) {
   .stat .text p.number {
@@ -551,8 +551,34 @@ blockquote .author {
 .dark-bg .stat .text p.sublabel {
   color: #B1BFC2;
 }
-.stat.big .text {
-  width: 100%;
+.stat.with-icon .icon {
+  display: block;
+  float: left;
+  margin-right: .5rem;
+}
+@media screen and (max-width: 981px) {
+  .stat.with-icon .icon {
+    display: none;
+  }
+}
+.stat.with-icon .icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+.stat.with-icon .text {
+  width: calc(100% - 2.5rem);
+}
+@media screen and (max-width: 981px) {
+  .stat.with-icon .text {
+    width: 100%;
+  }
+}
+.stat.with-icon.big .icon svg {
+  width: 3rem;
+  height: 3rem;
+}
+.stat.with-icon.big .text {
+  width: calc(100% - 3.5rem);
 }
 .stat.big .text p.number {
   font-family: 'DinPro', Verdana, Geneva, sans-serif;
@@ -560,7 +586,6 @@ blockquote .author {
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0;
-  color: #61BFE8;
 }
 @media screen and (max-width: 501px) {
   .stat.big .text p.number {
@@ -580,111 +605,14 @@ blockquote .author {
     line-height: 2rem;
   }
 }
-.stat-with-icon {
-  display: block;
-  width: 100%;
+.stat.brand-dark-green .text p.number {
+  color: #03333B;
 }
-.stat-with-icon p {
-  margin: 0;
-}
-.stat-with-icon .icon {
-  display: block;
-  float: left;
-  width: 2rem;
-  margin-right: .5rem;
-}
-@media screen and (max-width: 981px) {
-  .stat-with-icon .icon {
-    display: none;
-  }
-}
-.stat-with-icon .icon svg {
-  width: 2rem;
-  height: 2rem;
-}
-.stat-with-icon .text {
-  display: block;
-  float: left;
-  width: calc(100% - 2.5rem);
-}
-@media screen and (max-width: 981px) {
-  .stat-with-icon .text {
-    width: 100%;
-  }
-}
-.stat-with-icon .text p.number {
-  margin-top: -0.5rem;
-  font-family: 'DinPro', Verdana, Geneva, sans-serif;
-  font-weight: 600;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
-  color: #C98C1F;
-}
-@media screen and (max-width: 501px) {
-  .stat-with-icon .text p.number {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-@media screen and (min-width: 501px) {
-  .stat-with-icon .text p.number {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-  }
-}
-.light-bg .stat-with-icon .text p.label {
-  color: #0D1E28;
-}
-.dark-bg .stat-with-icon .text p.label {
-  color: #FCFCFC;
-}
-.light-bg .stat-with-icon .text p.sublabel {
-  color: #566269;
-}
-.dark-bg .stat-with-icon .text p.sublabel {
-  color: #B1BFC2;
-}
-.stat-with-icon.big .icon {
-  width: 3rem;
-}
-.stat-with-icon.big .icon svg {
-  width: 3rem;
-  height: 3rem;
-}
-.stat-with-icon.big .text {
-  width: calc(100% - 3.5rem);
-}
-@media screen and (max-width: 981px) {
-  .stat-with-icon.big .text {
-    width: 100%;
-  }
-}
-.stat-with-icon.big .text p.number {
-  font-family: 'DinPro', Verdana, Geneva, sans-serif;
-  font-weight: 600;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
+.stat.brand-blue .text p.number {
   color: #61BFE8;
 }
-@media screen and (max-width: 501px) {
-  .stat-with-icon.big .text p.number {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-}
-@media screen and (min-width: 501px) {
-  .stat-with-icon.big .text p.number {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  .stat-with-icon.big .text p.number {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
+.stat.brand-green .text p.number {
+  color: #7C8338;
 }
 .section-separator {
   display: block;
